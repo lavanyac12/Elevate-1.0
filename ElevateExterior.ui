@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>959</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(193, 198, 218);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLCDNumber" name="lcdFloorDisplay">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="extUpArrow">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>70</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);
+font: 32pt;</string>
+    </property>
+    <property name="text">
+     <string> ↑</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="extDownArrow">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>120</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);
+font: 32pt;</string>
+    </property>
+    <property name="text">
+     <string> ↓</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushBackButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>71</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(188, 0, 30);</string>
+    </property>
+    <property name="text">
+     <string>BACK</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="elevatorBorder" native="true">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>70</y>
+      <width>511</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+    <widget class="QWidget" name="elevatorBorder_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>491</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(220, 221, 233);
+border-color: rgb(0, 0, 0);
+border-color: black;
+border-width: 10px;</string>
+     </property>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>431</width>
+        <height>591</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <widget class="QPushButton" name="pushEnter">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>250</y>
+         <width>221</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(72, 72, 72);</string>
+       </property>
+       <property name="text">
+        <string>Enter Elevator</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="extLeft">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>41</width>
+         <height>591</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(141, 148, 174);
+border-left-color:  rgb(0, 0, 0);
+border-right-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="extRight">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>0</y>
+         <width>41</width>
+         <height>591</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(141, 148, 174);
+border-left-color: rgb(255, 255, 255);
+border-right-color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>pushEnter</zorder>
+      <zorder>extRight</zorder>
+      <zorder>extLeft</zorder>
+     </widget>
+     <widget class="QWidget" name="floor1" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>620</y>
+        <width>431</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(214, 215, 222);
+border-color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="floor1_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>630</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(193, 196, 214);
+border-color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_9" native="true">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>370</y>
+      <width>61</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+border-width: 2px;
+border-color: black;
+background-color: rgb(175, 187, 209);
+</string>
+    </property>
+    <widget class="QWidget" name="widget_10" native="true">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>400</y>
+       <width>101</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(188, 188, 188);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exteriorElevatorBtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>41</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(206, 208, 209);
+border-style: outset;
+border-width: 2px;
+border-radius: 16px;
+border-color: black;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>530</y>
+      <width>191</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="tree.qrc">:/newPrefix/2832331.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>-80</x>
+      <y>720</y>
+      <width>1121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="floor.qrc">:/newPrefix/Floor.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>290</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(157, 173, 201);</string>
+    </property>
+    <property name="text">
+     <string>FLOOR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="floorNumber">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>310</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 38pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(157, 173, 201);</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>280</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+border-width: 2px;
+border-color: black;
+background-color: rgb(157, 173, 201);
+</string>
+    </property>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>lcdFloorDisplay</zorder>
+   <zorder>extUpArrow</zorder>
+   <zorder>extDownArrow</zorder>
+   <zorder>pushBackButton</zorder>
+   <zorder>elevatorBorder</zorder>
+   <zorder>widget_9</zorder>
+   <zorder>label_2</zorder>
+   <zorder>floorNumber</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="tree.qrc"/>
+  <include location="floor.qrc"/>
+  <include location="tree.qrc"/>
+ </resources>
+ <connections/>
+</ui>
