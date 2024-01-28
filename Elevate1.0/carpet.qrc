@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="carpet">
+    <file>Carpet.jpg</file>
+  </qresource>
+</RCC>

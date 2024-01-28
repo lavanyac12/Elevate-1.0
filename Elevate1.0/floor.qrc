@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>Floor.png</file>
+  </qresource>
+</RCC>
